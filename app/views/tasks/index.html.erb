@@ -1,0 +1,7 @@
+<h1>Here are off the tasks requiring your attention on <%= Date.today %></h1>
+
+<ol>
+  <% @tasks.each do |task| %>
+    <li><%= link_to task.title, task_path(task) %></li>
+  <% end  %>
+</ol>
